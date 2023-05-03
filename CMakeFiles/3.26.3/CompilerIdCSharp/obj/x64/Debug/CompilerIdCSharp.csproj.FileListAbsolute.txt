@@ -1,0 +1,6 @@
+W:\Firmware\CMakeFiles\3.26.3\CompilerIdCSharp\obj\x64\Debug\CompilerIdCSharp.csproj.AssemblyReference.cache
+W:\Firmware\CMakeFiles\3.26.3\CompilerIdCSharp\obj\x64\Debug\CompilerIdCSharp.csproj.CoreCompileInputs.cache
+W:\Firmware\CMakeFiles\3.26.3\CompilerIdCSharp\obj\x64\Debug\CompilerIdCSharp.exe
+W:\Firmware\CMakeFiles\3.26.3\CompilerIdCSharp\obj\x64\Debug\CompilerIdCSharp.pdb
+W:\Firmware\CMakeFiles\3.26.3\CompilerIdCSharp\CompilerIdCSharp.exe
+W:\Firmware\CMakeFiles\3.26.3\CompilerIdCSharp\CompilerIdCSharp.pdb

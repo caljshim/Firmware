@@ -1,0 +1,138 @@
+^W:\FIRMWARE\CMAKEFILES\9B29369DDF9D9D2D39D2075F09BFE659\HARDWARE-MKDIR.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -Dcfgdir=/Release -P W:/Firmware/tmp/Hardware-mkdirs.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch W:/Firmware/src/Hardware-stamp/Release/Hardware-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^W:\FIRMWARE\CMAKEFILES\9B29369DDF9D9D2D39D2075F09BFE659\HARDWARE-DOWNLOAD.RULE
+setlocal
+cd W:\Firmware
+if %errorlevel% neq 0 goto :cmEnd
+W:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -P W:/Firmware/tmp/Hardware-gitclone.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch W:/Firmware/src/Hardware-stamp/Release/Hardware-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^W:\FIRMWARE\CMAKEFILES\9B29369DDF9D9D2D39D2075F09BFE659\HARDWARE-UPDATE.RULE
+setlocal
+cd W:\Firmware\Hardware
+if %errorlevel% neq 0 goto :cmEnd
+W:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -P W:/Firmware/tmp/Hardware-gitupdate.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^W:\FIRMWARE\CMAKEFILES\9B29369DDF9D9D2D39D2075F09BFE659\HARDWARE-PATCH.RULE
+setlocal
+cd W:\Firmware\Hardware
+if %errorlevel% neq 0 goto :cmEnd
+W:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch W:/Firmware/src/Hardware-stamp/Release/Hardware-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^W:\FIRMWARE\CMAKEFILES\9B29369DDF9D9D2D39D2075F09BFE659\HARDWARE-CONFIGURE.RULE
+setlocal
+cd W:\Firmware\Hardware
+if %errorlevel% neq 0 goto :cmEnd
+W:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch W:/Firmware/src/Hardware-stamp/Release/Hardware-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^W:\FIRMWARE\CMAKEFILES\9B29369DDF9D9D2D39D2075F09BFE659\HARDWARE-BUILD.RULE
+setlocal
+cd W:\Firmware\Hardware
+if %errorlevel% neq 0 goto :cmEnd
+W:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch W:/Firmware/src/Hardware-stamp/Release/Hardware-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^W:\FIRMWARE\CMAKEFILES\9B29369DDF9D9D2D39D2075F09BFE659\HARDWARE-INSTALL.RULE
+setlocal
+cd W:\Firmware\Hardware
+if %errorlevel% neq 0 goto :cmEnd
+W:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch W:/Firmware/src/Hardware-stamp/Release/Hardware-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^W:\FIRMWARE\CMAKEFILES\59680EDFDD34045074606FE98CB998D7\HARDWARE-COMPLETE.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory W:/Firmware/CMakeFiles/Release
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch W:/Firmware/CMakeFiles/Release/Hardware-complete
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch W:/Firmware/src/Hardware-stamp/Release/Hardware-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^W:\FIRMWARE\CMAKEFILES\C259DCB12FCC9E75A437A3870E6EC667\HARDWARE.RULE
+setlocal
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^W:\FIRMWARE\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SW:/Firmware -BW:/Firmware --check-stamp-file W:/Firmware/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

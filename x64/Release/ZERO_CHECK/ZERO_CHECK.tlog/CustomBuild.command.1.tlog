@@ -1,0 +1,10 @@
+^W:\FIRMWARE\CMAKEFILES\C259DCB12FCC9E75A437A3870E6EC667\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SW:/Firmware -BW:/Firmware --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file W:/Firmware/Firmware.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

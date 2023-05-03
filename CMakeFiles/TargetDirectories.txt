@@ -1,0 +1,4 @@
+W:/Firmware/CMakeFiles/Firmware.dir
+W:/Firmware/CMakeFiles/Hardware.dir
+W:/Firmware/CMakeFiles/ALL_BUILD.dir
+W:/Firmware/CMakeFiles/ZERO_CHECK.dir

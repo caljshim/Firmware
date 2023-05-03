@@ -1,0 +1,7 @@
+W:\Firmware\obj\x64\Release\Firmware.csproj.AssemblyReference.cache
+W:\Firmware\obj\x64\Release\Firmware.csproj.CoreCompileInputs.cache
+W:\Firmware\Release\Firmware.dll.config
+W:\Firmware\Release\Firmware.dll
+W:\Firmware\Release\Hardware.dll
+W:\Firmware\obj\x64\Release\Firmware.csproj.CopyComplete
+W:\Firmware\obj\x64\Release\Firmware.dll
